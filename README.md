@@ -5,7 +5,7 @@
 ![Platforms](https://img.shields.io/static/v1?label=Platforms&message=iOS%20|%20macOS%20|%20tvOS%20|%20watchOS%20|%20Linux&color=brightgreen&style=flat)
 ![Build](https://img.shields.io/github/workflow/status/munirwanis/Vaccine/Swift?style=flat)
 ![License](https://img.shields.io/github/license/munirwanis/Vaccine?style=flat)
-![Tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmunirwanis%2FVaccine)
+[![Tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmunirwanis%2FVaccine)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fmunirwanis%2FVaccine)
 
 ## Simple dependency injection library using Swift property wrappers
 
@@ -37,9 +37,8 @@ If manual or SPM are not a option, pull requests will be very welcome to help su
 
 ## Compatibility
 
-[ X ] **Swift 5.1+**
-
-[ X ] **Xcode 11+**
+- [X] **Swift 5.1+**
+- [X] **Xcode 11+**
 
 ## Usage
 
