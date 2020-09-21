@@ -53,7 +53,7 @@ public enum Vaccine {
 public struct Inject<T> {
     public let wrappedValue: T
     
-    init(_ value: T.Type) {
+    public init(_ value: T.Type) {
         self.wrappedValue = Vaccine.getCure(for: value)
     }
 }
