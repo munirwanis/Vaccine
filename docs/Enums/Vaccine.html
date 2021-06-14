@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vaccine Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/Vaccine" class="dashAnchor"></a>
+    <a title="Vaccine Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Vaccine Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Vaccine.html">Vaccine</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Inject.html">Inject</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Vaccine</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Vaccine</span></code></pre>
+
+                </div>
+              </div>
+            <p>Simple dependency injection library using Swift property wrappers.</p>
+
+<p>Tired of creating a lot of property on initializers of your classes so it&rsquo;s easier to test them?
+With <strong>Vaccine</strong> is possible to define properties in your classes using @propertyWrappers in a very simple way!</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7VaccineAAO7setCure3for8isUnique4withyxm_SbxyXAtlFZ"></a>
+                    <a name="//apple_ref/swift/Method/setCure(for:isUnique:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7VaccineAAO7setCure3for8isUnique4withyxm_SbxyXAtlFZ">setCure(for:<wbr>isUnique:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a new dependency to be injected using <code><a href="../Structs/Inject.html">Inject</a></code> property wrapper</p>
+
+<p>You can call the method to associate some <code>protocol</code> with any <code>struct</code> or <code>class</code></p>
+<pre class="highlight swift"><code><span class="kt">Vaccine</span><span class="o">.</span><span class="nf">setCure</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">SomeServiceProtocol</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">SomeService</span><span class="p">())</span>
+</code></pre>
+
+<p>If you want to define the dependency as <strong>singleton</strong>, you can pass the argument <code>isUnique</code></p>
+<pre class="highlight swift"><code><span class="kt">Vaccine</span><span class="o">.</span><span class="nf">setCure</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">SomeServiceProtocol</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">isUnique</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="kt">SomeService</span><span class="p">())</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">setCure</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="k">for</span> <span class="nv">theProtocol</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">isUnique</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">with</span> <span class="nv">resolver</span><span class="p">:</span> <span class="kd">@autoclosure</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>theProtocol</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocol that the dependency will conform</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isUnique</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Defines if the dependency will be the same instance (singleton) when it&rsquo;s resolved (defaults to <code>false</code>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resolver</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that will be instantiated when necessary</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7VaccineAAO7setCure3for8isUnique_yxm_SbxyctlFZ"></a>
+                    <a name="//apple_ref/swift/Method/setCure(for:isUnique:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7VaccineAAO7setCure3for8isUnique_yxm_SbxyctlFZ">setCure(for:<wbr>isUnique:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a new dependency to be injected using <code><a href="../Structs/Inject.html">Inject</a></code> property wrapper</p>
+
+<p>You can call the method to associate some <code>protocol</code> with any <code>struct</code> or <code>class</code></p>
+<pre class="highlight swift"><code><span class="kt">Vaccine</span><span class="o">.</span><span class="nf">setCure</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">SomeServiceProtocol</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">item</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">"World"</span><span class="p">]</span><span class="o">.</span><span class="nf">randomElement</span><span class="p">()</span> <span class="p">??</span> <span class="s">""</span>
+    <span class="k">return</span> <span class="kt">SomeService</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="n">item</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>If you want to define the dependency as <strong>singleton</strong>, you can pass the argument <code>isUnique</code></p>
+<pre class="highlight swift"><code><span class="kt">Vaccine</span><span class="o">.</span><span class="nf">setCure</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="kt">SomeServiceProtocol</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">isUnique</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">item</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">"World"</span><span class="p">]</span><span class="o">.</span><span class="nf">randomElement</span><span class="p">()</span> <span class="p">??</span> <span class="s">""</span>
+    <span class="k">return</span> <span class="kt">SomeService</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span> <span class="n">item</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">setCure</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="k">for</span> <span class="nv">theProtocol</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">,</span> <span class="nv">isUnique</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">_</span> <span class="nv">resolver</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>theProtocol</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocol that the dependency will conform</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isUnique</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Defines if the dependency will be the same instance (singleton) when it&rsquo;s resolved (defaults to <code>false</code>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resolver</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object that will be instantiated when necessary</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7VaccineAAO7getCure3forxxm_tlFZ"></a>
+                    <a name="//apple_ref/swift/Method/getCure(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7VaccineAAO7getCure3forxxm_tlFZ">getCure(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resolves the instance injected and implemented by the <code>protocol</code>, keep in mind that the
+application will crash in case this method is used without any register of the dependency
+it&rsquo;s recomended to register all the necessary dependencies at the starting point of your
+application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">getCure</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="k">for</span> <span class="nv">theProtocol</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>theProtocol</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocol that the dependency is conformed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns a new instance or an existing one (if <code>isSingleton</code> was set to <code>true</code>) of the object that conforms to the <code>protocol</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-06-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
